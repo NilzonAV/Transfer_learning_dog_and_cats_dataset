@@ -28,3 +28,31 @@ print("{} test data examples".format(images_test.shape))
 # Display sample images and labels from the training set
 class_name = np.array(["Dog", "Cat"])
 plt.figure(figsize=(15, 10))
+inx = np.random.choice(images_train.shape[0], 15, replace=False)
+for n, i in enumerate(inx)
+    ax = plt.subplot(3, 5, n+1)
+    plt.imshow(images_train[i])
+    plt.title(class_names[labels_train[i]])
+    plt.axis("off")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
