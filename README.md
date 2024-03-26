@@ -33,4 +33,4 @@ your_project_name/
 python src/scripts/transfer_learning.py
 
 #License
-#This project is licensed under the MIT License.
+This project is licensed under the MIT License.
