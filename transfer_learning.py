@@ -17,7 +17,7 @@ def get_transfer_model(input_shape=(224, 224, 3)):
     return model
 
 # Load training data
-train_generator = create_train_generator(train_path='train', batch_size=32)
+train_generator = create_train_generator(train_path='src/dogs-vs-cats/train', batch_size=32)
 
 # Initialize and get the transfer learning model
 model = get_transfer_model(input_shape=(224, 224, 3))
@@ -26,5 +26,5 @@ model = get_transfer_model(input_shape=(224, 224, 3))
 history = model.fit(train_generator, epochs=5, callbacks=[EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)])
 
 # Load and predict test images
-test_images, test_filenames = load_test_images('test1')
+test_images, test_filenames = load_test_images('src/dogs-vs-cats/test1')
 predictions = model.predict(test_images)
