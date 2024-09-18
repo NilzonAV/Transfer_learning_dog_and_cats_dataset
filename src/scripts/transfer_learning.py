@@ -3,7 +3,7 @@ from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.callbacks import EarlyStopping
-from preprocessing import create_train_generator, load_test_images
+from src.utils.preprocessing import create_train_generator, load_test_images
 
 def get_transfer_model(input_shape=(224, 224, 3)):
     base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=input_shape, pooling='avg')
