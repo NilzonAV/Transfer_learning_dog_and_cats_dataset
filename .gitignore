@@ -142,3 +142,6 @@ data/
 
 # VS Code settings
 .vscode/
+
+# .gitignore
+src/dogs-vs-cats
