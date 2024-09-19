@@ -75,7 +75,7 @@ validation_generator = datagen.flow_from_dataframe(
 model = get_transfer_model(input_shape=(224, 224, 3))
 
 # Train the model using the separate validation generator
-history = model.fit(train_generator, epochs=5, validation_data=validation_generator,
+history = model.fit(train_generator, epochs=10, validation_data=validation_generator,
                     callbacks=[EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)])
 
 # Save the trained model
