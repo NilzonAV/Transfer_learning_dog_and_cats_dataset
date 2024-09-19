@@ -1,11 +1,11 @@
 from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
 import numpy as np
-import os
 import pandas as pd
+import os
 
 def create_train_generator(train_path='dogs-vs-cats/train', image_size=(224, 224), batch_size=20):
     """
-    Create and return an image data generator for the training dataset.
+    Create and return an image data generator for the training dataset with augmentation.
     
     Parameters:
     - train_path: Path to the training dataset directory.
@@ -25,8 +25,17 @@ def create_train_generator(train_path='dogs-vs-cats/train', image_size=(224, 224
 
     df = pd.DataFrame(data)
 
-    # Create ImageDataGenerator
-    datagen = ImageDataGenerator(rescale=1./255)
+    # Create ImageDataGenerator with augmentation
+    datagen = ImageDataGenerator(
+        rescale=1./255,
+        rotation_range=20,         # Randomly rotate images by up to 20 degrees
+        width_shift_range=0.2,     # Randomly shift images horizontally by up to 20% of the width
+        height_shift_range=0.2,    # Randomly shift images vertically by up to 20% of the height
+        shear_range=0.2,           # Randomly apply shearing transformations
+        zoom_range=0.2,            # Randomly zoom in by up to 20%
+        horizontal_flip=True,      # Randomly flip images horizontally
+        fill_mode='nearest'        # Fill in new pixels created during augmentations
+    )
 
     # Create generator using flow_from_dataframe
     train_generator = datagen.flow_from_dataframe(
