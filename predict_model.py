@@ -29,7 +29,7 @@ train_generator = create_train_generator(train_path='src/dogs-vs-cats/train', ba
 model = get_transfer_model(input_shape=(224, 224, 3))
 
 # Train the model
-history = model.fit(train_generator, epochs=3, 
+history = model.fit(train_generator, epochs=10, 
                     callbacks=[EarlyStopping(monitor='loss', patience=3, restore_best_weights=True)])
 
 # Save the trained model
