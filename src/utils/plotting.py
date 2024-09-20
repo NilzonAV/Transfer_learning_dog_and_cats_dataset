@@ -52,6 +52,7 @@ def plot_training_history(history, history_title='model'):
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
     plt.legend(['Training', 'Validation'], loc='upper right')
+    plt.savefig(f'{history_title}_learning_curve.png')  # Saves as PNG file
 
     plt.show()
 
