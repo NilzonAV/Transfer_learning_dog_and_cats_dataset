@@ -144,4 +144,6 @@ data/
 .vscode/
 
 # .gitignore
-src/dogs-vs-cats
+# Ignore dataset or large files
+src/dogs-vs-cats/*
+
