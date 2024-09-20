@@ -145,5 +145,7 @@ data/
 
 # .gitignore
 # Ignore dataset or large files
-src/dogs-vs-cats/*
-
+src/dogs-vs-cats/*.csv
+src/dogs-vs-cats/*.zip
+src/dogs-vs-cats/test1/
+src/dogs-vs-cats/train/
