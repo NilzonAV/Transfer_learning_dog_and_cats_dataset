@@ -143,9 +143,9 @@ data/
 # VS Code settings
 .vscode/
 
-# .gitignore
-# Ignore dataset or large files
-src/dogs-vs-cats/*.csv
-src/dogs-vs-cats/*.zip
-src/dogs-vs-cats/test1/
-src/dogs-vs-cats/train/
+# Ignore model files
+model_v1.h5
+
+# Ignore macOS .DS_Store files
+.DS_Store
+src/.DS_Store
