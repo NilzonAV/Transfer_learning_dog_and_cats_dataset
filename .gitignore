@@ -149,3 +149,5 @@ model_v1.h5
 # Ignore macOS .DS_Store files
 .DS_Store
 src/.DS_Store
+
+__pycache__/
