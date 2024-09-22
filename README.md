@@ -1,4 +1,4 @@
-Transfer Learning with MobileNetV2: Dog vs. Cat Classification
+**Transfer Learning with MobileNetV2: Dog vs. Cat Classification
 
 Overview
 
