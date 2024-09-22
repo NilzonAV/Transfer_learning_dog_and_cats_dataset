@@ -1,36 +1,73 @@
-# Transfer Learning
+Transfer Learning with MobileNetV2: Dog vs. Cat Classification
 
-## Overview
-This project applies transfer learning techniques using MobileNetV2 to classify images into two categories: dogs and cats. By leveraging a pre-trained neural network, we significantly reduce the time and resources needed for training while maintaining high accuracy.
+Overview
 
-## Features
-- **Transfer Learning**: Utilizes MobileNetV2, a powerful image recognition model pre-trained on ImageNet.
-- **Image Preprocessing**: Implements efficient image preprocessing and augmentation to improve model performance.
-- **Modular Code**: The project is structured for readability and easy navigation, with separate modules for preprocessing, model training, and visualization.
-- **Interactive Visualizations**: Includes plotting utilities to visualize training progress, model accuracy, and loss over time.
+This project implements a Transfer Learning approach using the pre-trained MobileNetV2 model to classify images into two categories: dogs and cats. By leveraging a pre-trained model, the training time and computational resources are significantly reduced while achieving high classification accuracy.
 
-## Installation
+Features
 
-For Conda:
-To set up a local development environment, follow these steps:
+Transfer Learning: Utilizes the MobileNetV2 model pre-trained on ImageNet to adapt quickly to the dog vs. cat classification task.
+Image Preprocessing & Augmentation: Efficient preprocessing and augmentation techniques such as resizing, scaling, and flipping are used to improve model generalization and performance.
+Modular Architecture: The project is designed with a clean, modular structure that separates concerns into data preprocessing, model training, and result visualization.
+Visualization Tools: Includes utilities to generate plots of training and validation accuracy and loss over time to monitor model performance.
+Project Structure
+your_project_name/
+├── src/
+│   ├── data/                    # Contains the dataset (not included in the repo)
+│   │   ├── train/               # Training dataset folder
+│   │   └── test1/               # Testing dataset folder
+│   ├── scripts/                 # Scripts for training the model
+│   │   └── transfer_learning.py # Main script to execute the training
+│   ├── utils/                   # Utility scripts for preprocessing and plotting
+│   └── models/                  # Directory for saving trained models
+├── README.md                    # This README file
+├── requirements.txt             # Python package dependencies
+└── .gitignore                   # Ignored files
+Requirements
+
+Before running the project, ensure you have the following dependencies installed.
+
+Setting up Conda Environment
+# Create a virtual environment with Python 3.8
 conda create --name your_env_name python=3.8
+
+# Activate the environment
 conda activate your_env_name
 
-# install dependencies
+# Install dependencies
 pip install -r requirements.txt
+Installing Dependencies
+If you're not using Conda, you can install the required Python libraries using pip:
+pip install -r requirements.txt
+Dataset
 
-# Download the Dataset
-The dataset is not included in the GitHub repository due to its size. You can download the dataset from the following link: (https://www.kaggle.com/c/dogs-vs-cats)
+The dataset is not included in this repository due to its size. You can download the dataset from Kaggle: Dogs vs. Cats Dataset.
 
-After downloading, unzip the dataset into the data/ directory such that you have the following structure:
+After downloading the dataset, unzip the files and place them into the following directory structure:
 your_project_name/
 ├── data/
-│   ├── train/
-│   └── test1/
+│   ├── train/        # Training images (cat and dog images)
+│   └── test1/        # Testing images
+Usage
 
-
-#Usage
+Once the dataset is set up, you can train the model by running the following command:
 python src/scripts/transfer_learning.py
+This script will preprocess the data, train the model using transfer learning, and save the trained model in the models/ directory.
 
-#License
-This project is licensed under the MIT License.
+Predicting on New Images
+To make predictions on new images using the trained model, run the predict_model.py script:
+python predict_model.py
+Visualizations
+
+The project includes utilities to plot learning curves (accuracy and loss) over time, helping you monitor the model's performance during training.
+
+Example Learning Curves:
+The plotting.py script will generate and display plots for:
+
+Training vs. Validation Accuracy
+Training vs. Validation Loss
+You can view these curves by checking the saved plots or generating them during training.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
