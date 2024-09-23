@@ -1,4 +1,4 @@
-# # Transfer Learning with MobileNetV2: Dog vs. Cat Classification
+# Transfer Learning with MobileNetV2: Dog vs. Cat Classification
 
 # Overview
 
@@ -14,6 +14,7 @@ Visualization Tools: Includes utilities to generate plots of training and valida
 # Project Structure
 
 your_project_name/
+
 ├── src/
 │   ├── data/                    # Contains the dataset (not included in the repo)
 │   │   ├── train/               # Training dataset folder
@@ -46,7 +47,9 @@ Dataset
 The dataset is not included in this repository due to its size. You can download the dataset from Kaggle: Dogs vs. Cats Dataset.
 
 After downloading the dataset, unzip the files and place them into the following directory structure:
+
 your_project_name/
+
 ├── data/
 │   ├── train/        # Training images (cat and dog images)
 │   └── test1/        # Testing images
