@@ -1,16 +1,18 @@
-Transfer Learning with MobileNetV2: Dog vs. Cat Classification
+# # Transfer Learning with MobileNetV2: Dog vs. Cat Classification
 
-Overview
+# Overview
 
 This project implements a Transfer Learning approach using the pre-trained MobileNetV2 model to classify images into two categories: dogs and cats. By leveraging a pre-trained model, the training time and computational resources are significantly reduced while achieving high classification accuracy.
 
-Features
+# Features
 
 Transfer Learning: Utilizes the MobileNetV2 model pre-trained on ImageNet to adapt quickly to the dog vs. cat classification task.
 Image Preprocessing & Augmentation: Efficient preprocessing and augmentation techniques such as resizing, scaling, and flipping are used to improve model generalization and performance.
 Modular Architecture: The project is designed with a clean, modular structure that separates concerns into data preprocessing, model training, and result visualization.
 Visualization Tools: Includes utilities to generate plots of training and validation accuracy and loss over time to monitor model performance.
-Project Structure
+
+# Project Structure
+
 your_project_name/
 ├── src/
 │   ├── data/                    # Contains the dataset (not included in the repo)
