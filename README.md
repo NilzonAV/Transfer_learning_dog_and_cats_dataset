@@ -15,18 +15,26 @@ Visualization Tools: Includes utilities to generate plots of training and valida
 
 your_project_name/
 
-├── src/
-│   ├── data/                    # Contains the dataset (not included in the repo)
-│   │   ├── train/               # Training dataset folder
-│   │   └── test1/               # Testing dataset folder
-│   ├── scripts/                 # Scripts for training the model
-│   │   └── transfer_learning.py # Main script to execute the training
-│   ├── utils/                   # Utility scripts for preprocessing and plotting
-│   └── models/                  # Directory for saving trained models
-├── README.md                    # This README file
-├── requirements.txt             # Python package dependencies
-└── .gitignore                   # Ignored files
-Requirements
+├── README.md
+├── predict_model.py
+├── requirements.txt
+├── src
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-312.pyc
+│   ├── models
+│   │   └── __init__.py
+│   ├── scripts
+│   │   └── __init__.py
+│   └── utils
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-312.pyc
+│       │   ├── plotting.cpython-312.pyc
+│       │   └── preprocessing.cpython-312.pyc
+│       ├── plotting.py
+│       └── preprocessing.py
+└── train.py
 
 Before running the project, ensure you have the following dependencies installed.
 
