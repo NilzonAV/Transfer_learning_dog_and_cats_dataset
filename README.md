@@ -11,49 +11,12 @@ Image Preprocessing & Augmentation: Efficient preprocessing and augmentation tec
 Modular Architecture: The project is designed with a clean, modular structure that separates concerns into data preprocessing, model training, and result visualization.
 Visualization Tools: Includes utilities to generate plots of training and validation accuracy and loss over time to monitor model performance.
 
-# Project Structure
+## Project Structure
 
 your_project_name/
 
-├── README.md
+. ├── README.md # This README file ├── predict_model.py # Script to load the trained model and make predictions ├── requirements.txt # Python package dependencies ├── src/ │ ├── init.py # Package initializer │ ├── pycache/ # Cached compiled Python files │ │ └── init.cpython-312.pyc │ ├── models/ # Placeholder for model files (currently empty) │ │ └── init.py │ ├── scripts/ # Placeholder for future scripts (currently empty) │ │ └── init.py │ └── utils/ # Utility scripts for preprocessing and plotting │ ├── init.py │ ├── pycache/ # Cached compiled Python files │ │ ├── init.cpython-312.pyc │ │ ├── plotting.cpython-312.pyc │ │ └── preprocessing.cpython-312.pyc │ ├── plotting.py # Script for plotting learning curves and visualizations │ └── preprocessing.py # Script for image preprocessing and augmentations └── train.py # Main script to train the model using transfer learning
 
-├── predict_model.py
-
-├── requirements.txt
-
-├── src
-
-│   ├── __init__.py
-
-│   ├── __pycache__
-
-│   │   └── __init__.cpython-312.pyc
-
-│   ├── models
-
-│   │   └── __init__.py
-
-│   ├── scripts
-
-│   │   └── __init__.py
-
-│   └── utils
-
-│       ├── __init__.py
-
-│       ├── __pycache__
-
-│       │   ├── __init__.cpython-312.pyc
-
-│       │   ├── plotting.cpython-312.pyc
-
-│       │   └── preprocessing.cpython-312.pyc
-
-│       ├── plotting.py
-
-│       └── preprocessing.py
-
-└── train.py
 
 Before running the project, ensure you have the following dependencies installed.
 
